@@ -1,0 +1,41 @@
+<p>Heelo </p>
+<a routerLink='home' >Home</a> |
+<a routerLink='about' >About</a> |
+<a routerLink='contact' >contact</a> |
+<a routerLink='todo' >todo</a>  |
+<a routerLink='error' >checkeroor</a>  |
+<button type="button" class="btn btn-dark" routerLink='home'>Dark</button> |
+<p>user login</p>
+<a routerLink="user/login"> login</a> |
+<a routerLink="user/list">list </a> |
+
+ <app-testcomponent [appvar]="objectarray"></app-testcomponent>
+<app-testctop (parentfunction)="parentfunction($event)"></app-testctop>
+<br>
+<p>admin login</p>
+<a routerLink="admin/login"> login</a> |
+<a routerLink="admin/list">list </a> |
+{{valuerecieved}}
+
+<app-login></app-login>
+<button type="button" class="btn btn-dark" (click)="showvalue()">Dark</button>
+
+<table>
+  <tr>
+
+    <td>user id</td>
+<td>topic</td>
+<td>status</td>
+
+  </tr>
+
+<tr *ngFor="let data of data1">
+  <td>{{data.id}}</td>
+  <td>{{data.title}}</td>
+  <td>{{data.completed}}</td>
+  
+
+
+  </tr>
+</table>
+<router-outlet></router-outlet>

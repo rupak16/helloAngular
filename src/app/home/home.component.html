@@ -1,0 +1,18 @@
+<p>home works!</p>
+<input type="text" #boxval>
+
+
+<br>
+<br>
+<div class="buttons" style="display:flexbox">
+<button type="button" class="btn btn-primary" (click)="addVal(boxval.value)" (blur)="makenull(boxval.value); boxval.value=''" >Add</button> |
+<button type="button" class="btn btn-secondary" >Update</button> |
+<button type="button" class="btn btn-success" (click)="delVal(boxval.value)">Delete</button> |
+<button type="button" class="btn btn-danger" (click)="getVal()">Get</button>
+</div>
+<li *ngFor="let i of elements">
+{{i}}
+</li>
+
+
+
