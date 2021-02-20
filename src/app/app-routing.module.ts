@@ -11,7 +11,7 @@ import { FormsTestComponent } from './forms-test/forms-test.component';
 import {ReactiveexampleComponent} from './reactiveexample/reactiveexample.component'
 
 const routes: Routes = [
-  {path:'home',component:HomeComponent},
+  {path:'home1',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
   {path:'todo',component:TodoComponent},
